@@ -56,10 +56,10 @@ public class HeapImplementation {
 		int largest=i;
 		int left=2*i;
 		int right=2*i+1;
-		if(left<n &&a[largest]<a[left]) {
+		if(left<=n &&a[largest]<a[left]) {
 			largest=left;
 		}
-		if(right<n &&a[largest]<a[right]) {
+		if(right<=n &&a[largest]<a[right]) {
 			largest=right;
 		}
 		if(largest!=i) {
